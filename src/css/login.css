@@ -1,0 +1,129 @@
+.login {
+  width: 420px;
+  height: 450px;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login h3 {
+  width: 400px;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 22px;
+  color: #fff;
+  background: #FF3D3B;
+  line-height: 50px;
+}
+
+.login h3 .loginClose {
+  background: url(../css/images/sprite.png) -130px 0 no-repeat;
+  width: 45px;
+  height: 50px;
+  display: inline-block;
+  float: right;
+}
+
+.login .loginBody {
+  width: 360px;
+  margin: 0 30px;
+}
+
+.login .loginBody div:nth-of-type(1) {
+  width: 360px;
+  height: 48px;
+  margin: 25px 0 20px 0;
+  border: 1px solid #ccc;
+  background: url(../css/images/sprite.png) -411px 0 no-repeat;
+}
+
+.login .loginBody div:nth-of-type(1) .username {
+  width: 304px;
+  height: 46px;
+  float: right;
+  padding-left: 4px;
+  font-size: 4px;
+}
+
+.login .loginBody div:nth-of-type(2) {
+  height: 48px;
+  width: 360px;
+  border: 1px solid #ccc;
+  background: url(../css/images/sprite.png) -190px 0 no-repeat;
+  position: relative;
+}
+
+.login .loginBody div:nth-of-type(2) .userpass {
+  width: 304px;
+  height: 46px;
+  float: right;
+  padding-left: 4px;
+  font-size: 12px;
+}
+
+.login .loginBody div:nth-of-type(2) .logineye {
+  width: 40px;
+  height: 46px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  background: url(../css/images/sprite/png) -250px 0 no-repeat;
+}
+
+.login .loginBody .loginRemember {
+  height: 20px;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999;
+}
+
+.login .loginBody .loginRemember span {
+  float: right;
+}
+
+.login .loginBody .loginSubmit {
+  margin-top: 28px;
+  width: 360px;
+  height: 48px;
+  background: #FF3333;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+.login .loginBody .loginRegister {
+  margin: 8px 0 20px 0;
+  font-size: 12px;
+  text-align: right;
+  color: #999;
+}
+
+.login .loginBody .loginRegister a {
+  color: #FF3333;
+}
+
+.login .loginBody .loginWtl {
+  width: 360px;
+  height: 80px;
+  background: url(../css/images/sprite.png) 0 -176px no-repeat;
+}
+
+.login .loginBody .loginWtl .qq {
+  width: 35px;
+  height: 35px;
+  margin: 22px 0 0 90px;
+  display: inline-block;
+  background: url(../css/images/sprite.png) -310px 0 no-repeat;
+}
+
+.login .loginBody .loginWtl .ali {
+  width: 35px;
+  height: 35px;
+  margin: 22px 0 0 115px;
+  display: inline-block;
+  background: url(../css/images/sprite.png) -360px 0 no-repeat;
+}

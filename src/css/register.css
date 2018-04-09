@@ -1,0 +1,194 @@
+#register .container {
+  height: 636px;
+}
+
+#register .container .reg_l {
+  padding-left: 118px;
+  width: 490px;
+  height: 636px;
+  float: left;
+}
+
+#register .container .reg_l .til {
+  height: 54px;
+  font-size: 24px;
+  color: #999;
+  line-height: 54px;
+  padding-left: 138px;
+}
+
+#register .container .reg_l .form {
+  height: 95px;
+  padding-top: 15px;
+  width: 380px;
+}
+
+#register .container .reg_l .form label {
+  font-size: 12px;
+  color: #999;
+}
+
+#register .container .reg_l .form .user {
+  display: inline-block;
+  width: 300px;
+  height: 32px;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+#register .container .reg_l .sub {
+  width: 320px;
+  height: 34px;
+  border: 1px solid #999;
+  font-size: 18px;
+  line-height: 34px;
+  color: #999;
+  text-align: center;
+  margin-left: 45px;
+  margin-bottom: 34px;
+}
+
+#register .container .reg_l .forget {
+  display: block;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #999;
+  margin-left: 318px;
+}
+
+#register .container .reg_l dl {
+  height: 117px;
+  padding-left: 18px;
+}
+
+#register .container .reg_l dl dt {
+  height: 54px;
+  font-size: 12px;
+  color: #000;
+  line-height: 54px;
+}
+
+#register .container .reg_l dl dd {
+  float: left;
+}
+
+#register .container .reg_l dl dd .zhifubao {
+  display: block;
+  width: 145px;
+  height: 33px;
+  background: url(../css/images/sprite.png) -384px -165px no-repeat;
+  margin-right: 8px;
+}
+
+#register .container .reg_l dl dd .qq {
+  display: block;
+  width: 170px;
+  height: 32px;
+  background: url(../css/images/sprite.png) -340px -120px no-repeat;
+}
+
+#register .container .reg_r {
+  width: 472px;
+  float: left;
+}
+
+#register .container .reg_r .til {
+  height: 54px;
+  font-size: 24px;
+  color: #999999;
+  line-height: 54px;
+  padding-left: 197px;
+}
+
+#register .container .reg_r .toggle {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 144px;
+}
+
+#register .container .reg_r .toggle a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  color: #999;
+}
+
+#register .container .reg_r .toggle a:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+
+#register .container .reg_r .toggle a:nth-child(2) {
+  border-radius: 0 10px 10px 0;
+}
+
+#register .container .reg_r .toggle a.active {
+  color: #fff;
+  background: #EC8D36;
+}
+
+#register .container .reg_r .form {
+  width: 472px;
+  height: 538px;
+  padding-top: 18px;
+}
+
+#register .container .reg_r .form .form_0 {
+  width: 472px;
+  height: 32px;
+  text-align: right;
+}
+
+#register .container .reg_r .form .form_0 label {
+  font-size: 12px;
+}
+
+#register .container .reg_r .form .form_0 input {
+  height: 30px;
+  width: 330px;
+  border: 1px solid #ccc;
+}
+
+#register .container .reg_r .form span {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 22px;
+  margin-left: 138px;
+}
+
+#register .container .reg_r .form .auth-check {
+  width: 40px;
+  height: 25px;
+  float: left;
+  margin-left: 138px;
+}
+
+#register .container .reg_r .form .auth-read {
+  line-height: 30px;
+  float: left;
+  margin-left: 0;
+  font-size: 12px;
+}
+
+#register .container .reg_r .form .auth-read a {
+  color: #ff3300;
+}
+
+#register .container .reg_r .form .btn-sub {
+  height: 34px;
+  width: 330px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  line-height: 34px;
+  margin: 70px 0 0 138px;
+}

@@ -1,0 +1,214 @@
+#logReg {
+  border-bottom: 1px solid #ddd;
+}
+
+#logReg .container {
+  height: 27px;
+}
+
+#logReg .container .logReg_left li {
+  float: left;
+}
+
+#logReg .container .logReg_left li a {
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+  color: #3C3C3C;
+  padding: 0 18px;
+}
+
+#logReg .container .logReg_left li a.attention {
+  padding-left: 28px;
+}
+
+#logReg .container .logReg_right {
+  height: 27px;
+  float: right;
+}
+
+#logReg .container .logReg_right li {
+  float: left;
+}
+
+#logReg .container .logReg_right li a {
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+  color: #3C3C3C;
+}
+
+#logReg .container .logReg_right li a.welcome {
+  color: #666;
+}
+
+#logReg .container .logReg_right li a.login {
+  padding-left: 40px;
+}
+
+#logReg .container .logReg_right li a.register {
+  padding: 0 18px 0 8px;
+}
+
+#logReg .container .logReg_right li a.shopping {
+  padding: 0 18px 0 26px;
+  background: #FF3D3B;
+  color: #fff;
+}
+
+#logReg .container .logReg_right li a.online_service {
+  padding: 0 18px 0 28px;
+}
+
+#header .container {
+  height: 106px;
+  padding: 18px 0 0 32px;
+}
+
+#header .container h1 {
+  float: left;
+  width: 330px;
+  height: 106px;
+  background: url(../css/images/logo.png) no-repeat;
+}
+
+#header .container .form {
+  height: 106px;
+  float: left;
+}
+
+#header .container .form p {
+  height: 26px;
+  font-size: 12px;
+  color: #C70904;
+  line-height: 26px;
+}
+
+#header .container .form .search {
+  height: 36px;
+  width: 360px;
+  border: 2px solid #FF3D3B;
+  padding-left: 12px;
+  color: #999999;
+  font-size: 12px;
+  border-right: 0 none;
+  line-height: 36px;
+  float: left;
+}
+
+#header .container .form .btn {
+  width: 108px;
+  height: 40px;
+  background: #FF3D3B;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+
+#header .container .form dl {
+  height: 32px;
+  padding-top: 48px;
+  font-size: 12px;
+}
+
+#header .container .form dl dt {
+  float: left;
+  color: #999999;
+  padding-right: 5px;
+}
+
+#header .container .form dl dd {
+  float: left;
+}
+
+#header .container .form dl dd a {
+  padding: 0 5px;
+  color: #999;
+  border-right: 1px solid #999;
+}
+
+#header .container .form dl dd:hover a {
+  color: #FF3D3B;
+}
+
+#header .container .header_right {
+  height: 40px;
+  width: 312px;
+  float: right;
+  padding-top: 26px;
+}
+
+#header .container .header_right .right_1 {
+  height: 40px;
+  width: 104px;
+  position: relative;
+  float: left;
+}
+
+#header .container .header_right .right_1 p {
+  font-size: 12px;
+  color: #303030;
+  padding-left: 36px;
+}
+
+#header .container .header_right .right_1 p span {
+  font-weight: bold;
+}
+
+#header .container .header_right .right_2 i {
+  background-position: -40px 0;
+}
+
+#header .container .header_right .right_3 i {
+  background-position: -80px 0;
+}
+
+#nav {
+  border-bottom: 2px solid #FF3D3B;
+}
+
+#nav .container {
+  height: 34px;
+}
+
+#nav .container .navAll {
+  height: 34px;
+  width: 190px;
+  background: #FF3D3B;
+  font-size: 12px;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+  font-weight: bold;
+  float: left;
+}
+
+#nav .container ul {
+  width: 1010px;
+  height: 34px;
+  float: right;
+}
+
+#nav .container ul li {
+  float: left;
+}
+
+#nav .container ul li a {
+  display: block;
+  height: 34px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 34px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+#nav .container ul li a.home {
+  padding-left: 40px;
+}
+
+#nav .container ul li:hover a {
+  color: #FF3D3B;
+}

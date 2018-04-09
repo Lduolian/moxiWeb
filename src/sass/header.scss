@@ -1,0 +1,187 @@
+#logReg{
+    border-bottom:1px solid #ddd;
+    .container{
+        height: 27px;
+        .logReg_left{
+            li{
+                float:left;
+                a{
+                    height: 27px;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color:#3C3C3C;
+                    padding:0 18px;
+                }
+                a.attention{
+                    padding-left: 28px;
+                }
+            }
+        }
+        .logReg_right{
+            height: 27px;
+            float:right;
+            li{
+                float:left;
+                a{
+                    height: 27px;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color: #3C3C3C;
+                }
+                a.welcome{
+                    color:#666;
+                }
+                a.login{
+                    padding-left: 40px;
+                }
+                a.register{
+                    padding:0 18px 0 8px;
+                }
+                a.shopping{
+                    padding:0 18px 0 26px;
+                    background:#FF3D3B;
+                    color:#fff;
+                }
+                a.online_service{
+                    padding:0 18px 0 28px;
+                }
+            }
+        }
+    }
+}
+
+#header{
+    .container{
+        height: 106px;
+        padding:18px 0 0 32px;
+        h1{
+            float:left;
+            width: 330px;
+            height: 106px;
+            background:url(../css/images/logo.png) no-repeat;
+        }
+        .form{
+            height: 106px;
+            float:left;
+            p{
+               height: 26px;
+               font-size: 12px;
+               color:#C70904;
+               line-height: 26px; 
+            }
+            .search{
+                height: 36px;
+                width: 360px;
+                border:2px solid #FF3D3B;
+                padding-left: 12px;
+                color:#999999;
+                font-size: 12px;
+                border-right: 0 none;
+                line-height: 36px;
+                float:left;
+            }
+            .btn{
+                width: 108px;
+                height: 40px;
+                background:#FF3D3B;
+                float:left;
+                color:#fff;
+                font-weight: bold;
+                letter-spacing: 3px;
+                line-height: 40px;
+            }
+            dl{
+                height: 32px;
+                padding-top: 48px;
+                font-size: 12px;
+                dt{
+                    float:left;
+                    color:#999999;
+                    padding-right: 5px;
+                }
+                dd{
+                   float:left;
+                   a{
+                        padding:0 5px;
+                        color:#999;
+                        border-right:1px solid #999;
+                   } 
+                }
+                dd:hover a{
+                    color:#FF3D3B;
+                }
+            }
+        }
+        .header_right{
+            height: 40px;
+            width: 312px;
+            float:right;
+            padding-top: 26px;
+            .right_1{
+                height: 40px;
+                width: 104px;
+                position:relative;
+                float:left;
+                p{
+                    font-size: 12px;
+                    color:#303030;
+                    padding-left: 36px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .right_2{
+                i{
+                    background-position: -40px 0;
+                }
+            }
+            .right_3{
+                i{
+                    background-position: -80px 0;
+                }
+            }
+        }
+    }
+}
+
+#nav{
+    border-bottom: 2px solid #FF3D3B;
+    .container{
+        height: 34px;
+        .navAll{
+            height: 34px;
+            width: 190px;
+            background:#FF3D3B;
+            font-size: 12px;
+            color:#fff;
+            line-height: 34px;
+            text-align: center;
+            font-weight: bold;
+            float:left;
+        }
+        ul{
+           width: 1010px;
+           height: 34px;
+           float:right;
+           li{
+                float:left;
+                a{
+                    display:block;
+                    height: 34px;
+                    font-size: 12px;
+                    color:#000000;
+                    line-height: 34px;
+                    padding:0 20px;
+                    font-weight: bold;
+                }
+                a.home{
+                    padding-left: 40px;
+                }
+           }
+           li:hover a{
+               color:#FF3D3B; 
+           } 
+        }
+    }
+}

@@ -1,0 +1,192 @@
+#footer_top{
+    background:#F4F4F4;
+    border-top:2px solid #FF3D3B;
+    .container{
+        height: 214px;
+        padding-top: 26px;
+        .footer_tl{
+            height: 214px;
+            width: 760px;
+            float:left;
+            dl{
+               float:left;
+               text-align:center;
+               dt{
+                    font-size: 14px;
+                    color:#000;
+                    padding:0 34px;
+                    border-right:1px solid #999;
+               }
+               dd:nth-child(2){
+                    padding-top: 23px;
+               }
+               dd{
+                    a{
+                        font-size: 12px;
+                        color:#999999;
+                        line-height: 22px;
+                        padding:0 34px;
+                    }
+               }
+            }
+        }
+        .footer_tm{
+            height: 214px;
+            width: 240px;
+            float:left;
+            .footer_tm_t{
+               height: 160px;
+               width: 150px;
+               border-left: 1px solid #999;
+               border-right:1px solid #999;
+               padding:0 45px;
+               font-size: 12px;
+               h3{
+                   font-size: 12px;
+                   color:#000; 
+               }
+               h3.online{
+                    padding-top: 25px;
+               }
+               p{
+                  color:#999999;
+                  line-height: 22px;  
+               }
+               span{
+                   display:block;
+                   width: 120px;
+                   height: 36px;
+                   background:url(../css/images/contack.png) no-repeat;
+                   margin-left:15px; 
+               } 
+            }
+            .footer_tm_b{
+                text-align: center;
+                p{
+                    font-size: 12px;
+                    color:#999;
+                    line-height: 22px;
+                }
+            }
+        }
+        .footer_tr{
+            height: 214px;
+            width: 108px;
+            padding:0 45px;
+            float:left;
+            span{
+              display:block;
+              width: 108px;
+              height: 107px;
+              background:url(../css/images/erweima.png) no-repeat;  
+            }
+            dl{
+               text-align: center;
+               dt{
+                    font-size: 12px;
+                    color:#000;
+                    line-height: 22px;
+               }
+               dd{
+                  font-size: 12px;
+                  color:#999;
+                  line-height: 22px;  
+               } 
+            }
+        }
+    }
+}
+
+#footer_center{
+    background:#EFEFEF;
+    .container{
+        height: 128px;
+        padding-top: 32px;
+        padding-left: 25px;
+        .footer_c0{
+            width: 230px;
+            position:relative;
+            float:left;
+            margin-right: 78px;
+            i{
+                display:block;
+                width: 96px;
+                height: 96px;
+                position:absolute;
+                background:url(../css/images/a1.png) no-repeat;
+            }
+            h3{
+                padding-left: 122px;
+                font-size: 12px;
+                color:#000;
+                padding-top: 30px;
+                font-weight: bold;
+            }
+            span{
+                padding-left: 122px;
+                font-size: 12px;
+                color:#A6A6A6;
+                line-height: 22px;
+            }
+        }
+        .icon2{
+            i{
+               background-image: url(../css/images/a2.png);
+            }
+        }
+        .icon3{
+            i{
+                background-image: url(../css/images/a3.png);
+            }
+        }
+        .icon4{
+            margin-right: 0;
+            i{
+               background-image: url(../css/images/a4.png); 
+            }
+        }
+    }
+}
+
+#copyright{
+    background:#F4F4F4;
+    .container{
+        height: 144px;
+        p{
+            font-size: 12px;
+            line-height: 48px;
+            color:#000;
+            text-align: center;
+        }
+        ul{
+            padding-left: 88px;
+            li{
+                float:left;
+                a{
+                   display:block;
+                   height: 48px;
+                   width: 146px;
+                   background:url(../css/images/sprite.png) 0 -55px no-repeat;
+                   margin-right: 38px;
+                }
+                a.two{
+                   background-position: -155px -55px; 
+                }
+                a.three{
+                   width: 103px;
+                   background-position: -315px -55px; 
+                }
+                a.four{
+                    background-position: -440px -55px;
+                }
+                a.five{
+                    background-position: 0 -120px;
+                }
+                a.six{
+                    background-position: -165px -120px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
