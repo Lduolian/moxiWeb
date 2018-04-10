@@ -1,0 +1,193 @@
+#menu{
+    background:#DFDFDF;
+    .container{
+        height: 400px;
+        position:relative;
+        .menu_l{
+            height: 400px;
+            width: 190px;
+            float:left;
+            li{
+                a{
+                    display:block;
+                    width: 190px;
+                    height: 50px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 50px;
+                    color:#fff;
+                    background:#101010 url(../css/images/icon2.png) 10px -41px no-repeat;
+                }
+            }
+            li{
+                a.food{
+                   background-position:10px -146px; 
+                }
+            }
+            li{
+                a.nutrition{
+                   background-position:10px -239px; 
+                }
+            }
+            li{
+                a.beauty{
+                   background-position:10px -342px; 
+                }
+            }
+            li{
+                a.baby{
+                   background-position:10px -441px; 
+                }
+            }
+            li{
+                a.home{
+                   background-position:10px -542px; 
+                }
+            }
+            li{
+                a.digital{
+                   background-position:10px -638px; 
+                }
+            }
+            li{
+                a.adult{
+                   background-position:10px -739px; 
+                }
+            }
+            li.act{
+                a{
+                   color:#ff3b3b;
+                   font-weight: bold;
+                   background:#fff url(../css/images/icon2.png) no-repeat; 
+                }
+            }
+            li.act{
+                .hotSearch{
+                    background-position:10px 9px;
+                }
+            }
+            li.act{
+                .food{
+                    background-position:10px -95px;
+                }
+            }
+            li.act{
+                .nutrition{
+                    background-position:10px -189px;
+                }
+            }
+            li.act{
+                .beauty{
+                    background-position:10px -291px;
+                }
+            }
+            li.act{
+                .baby{
+                    background-position:10px -390px;
+                }
+            }
+            li.act{
+                .home{
+                    background-position:10px -492px;
+                }
+            }
+            li.act{
+                .digital{
+                    background-position:10px -588px;
+                }
+            }
+            li.act{
+                .adult{
+                    background-position:10px -690px;
+                }
+            }
+        }
+        .insertMenu{
+            .insertMenu_0{
+                width: 504px;
+                height: 348px;
+                border:1px solid #ccc;
+                border-left:0 none;
+                background:#fff;
+                opacity: 0.9;
+                position:absolute;
+                top: 0;
+                left: 190px;
+                padding:25px 20px;
+                z-index:1000;
+                ul{
+                    li{
+                       padding-top: 10px;
+                       h3{
+                        a{
+                            color:#000;
+                            font-size: 12px;
+                        }
+                       }
+                       a{
+                          color:#666;
+                          font-size: 12px;
+                          padding-right: 8px;  
+                       }
+                       a:hover{
+                        color:#ff3d3b;
+                       } 
+                    }
+                    li:nth-child(1){
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+        .banner{
+            width: 810px;
+            height: 400px;
+            float:left;
+            position:relative;
+            .bannerPic{
+                li{
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    display:none;
+                    img{
+                        width: 810px;
+                        height: 400px;
+                    }
+                }
+                li.show{
+                    display:block;
+                }
+            }
+            .bannerDot{
+                height: 20px;
+                width: 465px;
+                position:absolute;
+                bottom:10px;
+                left: 0;
+                text-align:center;
+                padding-left: 335px;
+                li{
+                    float:left;
+                    width: 18px;
+                    height: 18px;
+                    margin-left: 14px;
+                    background:url(../css/images/sprite.png) -500px 0 no-repeat;
+                }
+                li.act{
+                    background:url(../css/images/sprite.png) -470px 0 no-repeat;
+                }
+            }
+            
+        }
+        .smallBanner{
+                height: 400px;
+                width: 200px;
+                float:left;
+                .smallT{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+    }
+}

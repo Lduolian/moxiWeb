@@ -1,0 +1,184 @@
+#menu {
+  background: #DFDFDF;
+}
+
+#menu .container {
+  height: 400px;
+  position: relative;
+}
+
+#menu .container .menu_l {
+  height: 400px;
+  width: 190px;
+  float: left;
+}
+
+#menu .container .menu_l li a {
+  display: block;
+  width: 190px;
+  height: 50px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: #101010 url(../css/images/icon2.png) 10px -41px no-repeat;
+}
+
+#menu .container .menu_l li a.food {
+  background-position: 10px -146px;
+}
+
+#menu .container .menu_l li a.nutrition {
+  background-position: 10px -239px;
+}
+
+#menu .container .menu_l li a.beauty {
+  background-position: 10px -342px;
+}
+
+#menu .container .menu_l li a.baby {
+  background-position: 10px -441px;
+}
+
+#menu .container .menu_l li a.home {
+  background-position: 10px -542px;
+}
+
+#menu .container .menu_l li a.digital {
+  background-position: 10px -638px;
+}
+
+#menu .container .menu_l li a.adult {
+  background-position: 10px -739px;
+}
+
+#menu .container .menu_l li.act a {
+  color: #ff3b3b;
+  font-weight: bold;
+  background: #fff url(../css/images/icon2.png) no-repeat;
+}
+
+#menu .container .menu_l li.act .hotSearch {
+  background-position: 10px 9px;
+}
+
+#menu .container .menu_l li.act .food {
+  background-position: 10px -95px;
+}
+
+#menu .container .menu_l li.act .nutrition {
+  background-position: 10px -189px;
+}
+
+#menu .container .menu_l li.act .beauty {
+  background-position: 10px -291px;
+}
+
+#menu .container .menu_l li.act .baby {
+  background-position: 10px -390px;
+}
+
+#menu .container .menu_l li.act .home {
+  background-position: 10px -492px;
+}
+
+#menu .container .menu_l li.act .digital {
+  background-position: 10px -588px;
+}
+
+#menu .container .menu_l li.act .adult {
+  background-position: 10px -690px;
+}
+
+#menu .container .insertMenu .insertMenu_0 {
+  width: 504px;
+  height: 348px;
+  border: 1px solid #ccc;
+  border-left: 0 none;
+  background: #fff;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  padding: 25px 20px;
+  z-index: 1000;
+}
+
+#menu .container .insertMenu .insertMenu_0 ul li {
+  padding-top: 10px;
+}
+
+#menu .container .insertMenu .insertMenu_0 ul li h3 a {
+  color: #000;
+  font-size: 12px;
+}
+
+#menu .container .insertMenu .insertMenu_0 ul li a {
+  color: #666;
+  font-size: 12px;
+  padding-right: 8px;
+}
+
+#menu .container .insertMenu .insertMenu_0 ul li a:hover {
+  color: #ff3d3b;
+}
+
+#menu .container .insertMenu .insertMenu_0 ul li:nth-child(1) {
+  padding-top: 0;
+}
+
+#menu .container .banner {
+  width: 810px;
+  height: 400px;
+  float: left;
+  position: relative;
+}
+
+#menu .container .banner .bannerPic li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#menu .container .banner .bannerPic li img {
+  width: 810px;
+  height: 400px;
+}
+
+#menu .container .banner .bannerPic li.show {
+  display: block;
+}
+
+#menu .container .banner .bannerDot {
+  height: 20px;
+  width: 465px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  padding-left: 335px;
+}
+
+#menu .container .banner .bannerDot li {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 14px;
+  background: url(../css/images/sprite.png) -500px 0 no-repeat;
+}
+
+#menu .container .banner .bannerDot li.act {
+  background: url(../css/images/sprite.png) -470px 0 no-repeat;
+}
+
+#menu .container .smallBanner {
+  height: 400px;
+  width: 200px;
+  float: left;
+}
+
+#menu .container .smallBanner .smallT {
+  width: 200px;
+  height: 200px;
+}

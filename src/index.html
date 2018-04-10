@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <title>摩西网</title>
     <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
-<script type="text/javascript" src='lib/jquery-3.3.1.js'></script>
-<script type="text/javascript">
+<script type="text/javascript" src='js/require.js' data-main='js/index.js'></script>
+<!-- <script type="text/javascript" src='lib/jquery-3.3.1.js'></script> -->
+<!-- <script type="text/javascript">
     jQuery(function($){
         $('#moxi_header').load('html/header.html');
         $('#moxi_footer').load('html/footer.html');
     })
 
-</script>
+</script> -->
 <body>
     <div id="moxi">
         <div id="moxi_header"></div>
@@ -21,14 +22,14 @@
         <div id="menu">
             <div class="container">
                 <ul class="menu_l">
-                    <li><a href="#">摩西热卖</a></li>
-                    <li class="food"><a href="#">食品饮料</a></li>
-                    <li class='nutrition'><a href="#">营养保健</a></li>
-                    <li class='beauty'><a href="#">美妆护肤</a></li>
-                    <li class='baby'><a href="#">母婴用品</a></li>
-                    <li class='home'><a href="#">家居生活</a></li>
-                    <li class='digital'><a href="#">数码电器</a></li>
-                    <li class='adult'><a href="#">成人用品</a></li>
+                    <li><a href="#" class='hotSearch'>摩西热卖</a></li>
+                    <li><a href="#" class="food">食品饮料</a></li>
+                    <li><a href="#" class='nutrition'>营养保健</a></li>
+                    <li><a href="#" class='beauty'>美妆护肤</a></li>
+                    <li><a href="#" class='baby'>母婴用品</a></li>
+                    <li><a href="#" class='home'>家居生活</a></li>
+                    <li><a href="#" class='digital'>数码电器</a></li>
+                    <li><a href="#" class='adult'>成人用品</a></li>
                 </ul>
                 <div class="insertMenu" >
                     <div class="insertMenu_0" style='display:none;'>
@@ -366,7 +367,7 @@
                         </ul>
                     </div>
 
-                    <div class="insertMenu_0">
+                    <div class="insertMenu_0" style='display:none;'>
                         <ul>
                             <li>
                                 <h3><a href="#">计生用品</a></h3>
@@ -390,6 +391,35 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="banner">
+                    <ul class="bannerPic">
+                        <li class='show' data-bc='#ffc72c'><a href="#"><img src="css/images/banner1.jpg" alt="" /></a></li>
+                        <li data-bc='#ffe5e6'><a href="#"><img src="css/images/banner2.jpg" alt="" /></a></li>
+                        <li data-bc='#dfdfdf'><a href="#"><img src="css/images/banner3.jpg" alt="" /></a></li>
+                        <li data-bc='#fcecda'><a href="#"><img src="css/images/banner4.jpg" alt="" /></a></li>
+                    </ul>
+                    <ul class="bannerDot">
+                        <li class='act'></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="smallBanner">
+                    <div class="smallT">
+                        <a href="#">
+                            <img src="css/images/smallBan1.png"/>
+                        </a>
+                    </div>
+                    <div class="smallT">
+                        <a href="#">
+                            <img src="css/images/smallBan2.png"/>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
