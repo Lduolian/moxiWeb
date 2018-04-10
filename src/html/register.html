@@ -5,14 +5,14 @@
     <title>注册</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/register.css" />
-    <script type="text/javascript" src='../lib/jquery-3.3.1.js'></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src='../js/require.js' data-main='../js/register.js'></script>
+    <!-- <script type="text/javascript">
         jQuery(function($){
             $('#moxi_header').load('header.html');
             $('#moxi_footer').load('footer.html');
         })
 
-    </script>
+    </script> -->
 </head>
 <body>
     <div id="moxi_header"></div>
@@ -26,6 +26,7 @@
                 </div>
                 <div class="sub">登录</div>
                 <a href="#" class='forget'>忘记密码?</a>
+                <div class="loginInfo"></div>
                 <dl>
                     <dt>其他登录方式:
                         <dd><a href="#" class='zhifubao'></a></dd>
@@ -38,30 +39,30 @@
             <div class="reg_r">
                 <h3 class="til">免费注册</h3>
                 <div class="toggle">
-                    <a href="#" class='active'>邮箱注册</a>
+                    <a href="#" class='active'>帐号注册</a>
                     <a href="#">手机号注册</a>
                 </div>
                 <div class="form">
                     <div class="form_0">
-                        <label for="email">请填写您的email地址:</label>
-                        <input type="text" id='email'/>
+                        <label for="zhuceNum">请填写注册帐号:</label>
+                        <input type="text" id='zhuceNum'/>
                     </div>
-                    <span>登录帐号，请认真填写</span>
+                    <span class='loginNum'>登录帐号，请认真填写</span>
                     <div class="form_0">
                         <label for="username">昵称:</label>
                         <input type="text" id='username'/>
                     </div>
-                    <span>3~10个字符,只含有汉字，数字，字母，_</span>
+                    <span class='nicheng'>3~10个字符,只含有数字，字母，_</span>
                     <div class="form_0">
                         <label for="password">请输入密码:</label>
                         <input type="password" id='password'/>
                     </div>
-                    <span>6~16位字符,只能包含字母，数字或下划线</span>
+                    <span class='firstPass'>6~16位字符,只能包含字母，数字或下划线</span>
                     <div class="form_0">
                         <label for="passwordAgain">请再次输入密码:</label>
                         <input type="password" id='passwordAgain'/>
                     </div>
-                    <span></span>
+                    <span class='secondPass'></span>
                     <div class="form_0">
                         <label for="knows">从何处得知我们网站:</label>
                         <input type="text" id='knows' />
@@ -71,7 +72,10 @@
                         <label for="code">请输入验证码:</label>
                         <input type="text" id='code'/>
                     </div>
-                    <span></span>
+                    <span>请正确输入验证码</span>
+
+                    <div class="randomCode">fdsaf</div>
+
                     <input type="checkbox" checked = 'checked' class='auth-check'/>
                     <div class="auth-read">
                         我已看过并接受《

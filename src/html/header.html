@@ -5,6 +5,7 @@
     <title>头部</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <script type="text/javascript" src='../js/require.js' data-main='../js/header.js'></script>
 </head>
 <body>
      <div id="logReg">
@@ -16,12 +17,43 @@
                 </ul>
                 <ul class="logReg_right">
                     <li><a href="#" class="welcome">你好，欢迎来到摩西！</a></li>
-                    <li><a href="#" class="login">登录</a><a href="#" class="register">免费注册</a></li>
+                    <li><a href="#" class="login loginbonder">登录</a><a href="html/register.html" class="register">免费注册</a></li>
                     <li><a href="#" class="shopping">购物车 <strong></strong>件商品</a></li>
                     <li><a href="#" class="online_service">在线客服 400-660-6366</a></li>
                 </ul>
             </div>
         </div>
+
+        <div id="loginLay" style='display:none;'></div>
+        <div id="loginWindow" style='display:none;'>
+            <div class="login">
+                <h3>您尚未登录<span class='loginClose'></span></h3>
+                <div class = 'loginBody'>
+                    <div>
+                        <input type="text" class='username' placeholder='手机号/邮箱' />
+                    </div>
+                    <div>
+                        <input type="password" class='userpass' placeholder='密码' />
+                        <span class='logineye'></span>
+                    </div>
+                    <div class="loginRemember">
+                        <input type="checkbox" checked='checked' />记住用户
+                        <span><a href="#">忘记密码</a></span>
+                    </div>
+                    <div class="loginInfo"></div>
+                    <div class="loginSubmit">登录</div>
+                    <div class="loginRegister">没有账号？
+                        <a href="#">免费注册</a>
+                    </div>
+                    <div class="loginWtl">
+                        <p class="qq"></p>
+                        <p class="ali"></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
 
         <div id="header">
             <div class="container">

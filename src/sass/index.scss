@@ -191,3 +191,59 @@
             }
     }
 }
+
+#hotSales{
+    background:#F5F5F5;
+    .container{
+        height: 150px;
+        ul{
+            height: 150px;
+            li.hot{
+                width: 190px;
+                float:left;
+                border-right:2px solid #efefef;
+                a{
+                    display:block;
+                    width: 190px;
+                    height: 150px;
+                    background:url(../css/images/hot.png) 0 0 no-repeat;
+                }
+            }
+            li.hotpic{
+                width: 251px;
+                height: 148px;
+                float:left;
+                overflow:hidden;
+                border:1px solid #efefef;
+                border-left:0 none;
+                a{
+                    display:block;
+                    width: 250px;
+                    height: 148px;
+                    background:url(../css/images/hot.png) -210px 0 no-repeat;
+                }
+
+            }
+            li.hotpic:hover{
+                a{
+                    transform:scale(1.01);
+                }
+            }
+            li.two{
+                a{
+                    background-position:-500px 0;
+                }
+            }
+            li.three{
+                a{
+                    background-position:0 -175px;
+                }                
+            }
+            li.four{
+                a{
+                    background-position:-300px -175px;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 require(['config'],function(){
-    require(['jquery'],function($){
+    require(['jquery','header'],function($){
         $('#moxi_header').load('html/header.html');
         $('#moxi_footer').load('html/footer.html');
 

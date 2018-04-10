@@ -58,6 +58,14 @@
   margin-left: 318px;
 }
 
+#register .container .reg_l .loginInfo {
+  width: 300px;
+  height: 30px;
+  font-size: 12px;
+  color: #f00;
+  line-height: 30px;
+}
+
 #register .container .reg_l dl {
   height: 117px;
   padding-left: 18px;
@@ -158,10 +166,25 @@
 
 #register .container .reg_r .form span {
   display: block;
+  height: 30px;
   font-size: 12px;
   color: #999;
-  margin-bottom: 22px;
   margin-left: 138px;
+}
+
+#register .container .reg_r .form span.error {
+  color: red;
+}
+
+#register .container .reg_r .form .randomCode {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #ccc;
+  margin-left: 300px;
+  text-align: center;
+  line-height: 30px;
+  color: #f60;
+  font-weight: bold;
 }
 
 #register .container .reg_r .form .auth-check {
