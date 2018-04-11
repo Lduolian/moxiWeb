@@ -1,5 +1,5 @@
 require(['config'],function(){
-    require(['jquery'],function(){
+    require(['jquery','common'],function(){
 
         jQuery(function($){
             $('#moxi_header').load('../html/header.html');
@@ -77,7 +77,7 @@ require(['config'],function(){
                 }else{
                     $('.firstPass').removeClass('error').html('');
                 }
-            })
+            });
 
             $('#passwordAgain').focusout(function(){
                 var pwd = $('#password').val();
@@ -90,8 +90,27 @@ require(['config'],function(){
                 }else{
                     $('.secondPass').removeClass('error').html('');
                 }
-            })
+            });
 
+            var code = randomLetterNum();
+            $('.randomCode').html(code);
+            $('.nextCode').click(function(){
+                var code = randomLetterNum();
+                $('.randomCode').html(code);
+            })
+            $('#code').focusout(function(){
+                var randomCode = $('.randomCode').html();
+                randomCode = $.trim(randomCode);
+                var code = $('#code').val();
+                code = $.trim(code);
+                if(code.length===0 || randomCode != code){
+                    $('.vcode').addClass('error').html('请输入正确的验证码');
+                    return false;
+                }else{
+                    $('.vcode').removeClass('error').html('');
+                }
+
+            });
             $('.btn-sub').click(function(){
                 var _zhuceNum = $('#zhuceNum').val();
                 _zhuceNum = $.trim(_zhuceNum);
@@ -108,7 +127,8 @@ require(['config'],function(){
                         console.log(data);
                     }
                 })
-            })
+            });
+
 
 
         })

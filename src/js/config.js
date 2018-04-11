@@ -1,10 +1,12 @@
 require.config({
     paths:{
         jquery:'../lib/jquery-3.3.1',
-        header:'./header'
+        header:'./header',
+        common:'./common'
     },
     // 配置依赖
     shim:{
-        header:['jquery']
+        header:['jquery'],
+        common:['jquery']
     }
 });

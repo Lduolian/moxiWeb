@@ -1,5 +1,5 @@
 require(['config'],function(){
-    require(['jquery'],function(){
+    require(['jquery','common'],function(){
         jQuery(function($){
             
             $('.loginbonder').click(function(){
@@ -20,6 +20,8 @@ require(['config'],function(){
                 }else if(!/^[a-z][\w\-]{5,19}$/i.test(_username)){
                     $('.loginInfo').html('用户名格式不正确,以字母开头，6-20位字符');
                     return;
+                }else{
+                    $('.loginInfo').html('');
                 }
             });
 
@@ -52,11 +54,24 @@ require(['config'],function(){
                             }else{
                                 $('#loginLay').css('display','none');
                                 $('#loginWindow').css('display','none');
+                                welcome(data);
                             }
                         }
                     })
                 }
-            })
+
+                function welcome(data){
+                    data = JSON.parse(data);
+                    var _username = data.username;
+                    document.cookie = "username=" + _username;
+                    var user = Cookie.get('username');
+                    $('.login').hide();
+                    $('.register').hide();
+                    $('.hello').html(user);
+                    $('.exit').html('退出');
+                }
+
+            });
         })
     })
 })

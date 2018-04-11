@@ -38,6 +38,10 @@
   color: #3C3C3C;
 }
 
+#logReg .container .logReg_right li a:hover {
+  color: #f00;
+}
+
 #logReg .container .logReg_right li a.welcome {
   color: #666;
 }

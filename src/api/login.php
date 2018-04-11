@@ -7,9 +7,9 @@
     $userpass = md5($userpass);
     $sql = "select * from user where username = '$username' and userpass = '$userpass'";
     $result  = $conn->query($sql);
-    // $res = $result->fetch_assoc();
+    $res = $result->fetch_assoc();
     if($result->num_rows > 0){
-        echo "success";
+        echo  json_encode($res,JSON_UNESCAPED_UNICODE);
     }else{
         echo "fail";
     }
