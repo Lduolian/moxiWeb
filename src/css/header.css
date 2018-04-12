@@ -46,8 +46,16 @@
   color: #666;
 }
 
-#logReg .container .logReg_right li a.login {
+#logReg .container .logReg_right li span.login {
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+  color: #3C3C3C;
   padding-left: 40px;
+}
+
+#logReg .container .logReg_right li span.login:hover {
+  color: #f00;
 }
 
 #logReg .container .logReg_right li a.register {
@@ -62,6 +70,14 @@
 
 #logReg .container .logReg_right li a.online_service {
   padding: 0 18px 0 28px;
+}
+
+#logReg .container .logReg_right li.sql {
+  height: 27px;
+  line-height: 27px;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #f60;
 }
 
 #loginLay {

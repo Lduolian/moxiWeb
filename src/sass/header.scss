@@ -34,8 +34,15 @@
                 a.welcome{
                     color:#666;
                 }
-                a.login{
+                span.login{
+                    height: 27px;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color: #3C3C3C;
                     padding-left: 40px;
+                }
+                span.login:hover{
+                    color:#f00;
                 }
                 a.register{
                     padding:0 18px 0 8px;
@@ -48,6 +55,14 @@
                 a.online_service{
                     padding:0 18px 0 28px;
                 }
+            }
+
+            li.sql{
+                height: 27px;
+                line-height: 27px;
+                padding:0 8px;
+                font-size:12px;
+                color:#f60;
             }
 
         }

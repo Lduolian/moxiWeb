@@ -67,8 +67,8 @@ require(['config'],function(){
                     var user = Cookie.get('username');
                     $('.login').hide();
                     $('.register').hide();
-                    $('.hello').html(user);
-                    $('.exit').html('退出');
+                    $('.hello').html("hello，"+user);
+                    $('.exit').html('[退出]');
                 }
 
             });

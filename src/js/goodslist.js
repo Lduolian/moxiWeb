@@ -55,12 +55,13 @@ require(['config'],function(){
                         }
                     })
                 }
-            })
+            });
 
 
             var fun = function(data){
-                $('.goods_right').html('');
-                var ul = $('<ul/>');
+                $('.show').html('');
+                // var ul = $('<ul/>');
+                // ul.addClass('show');
                 var res = $.map(data,function(item){
                     return `<li data-id="${item.id}"><a href="#">
                     <div class="pic"><img src="${item.img}"></div>
@@ -69,10 +70,27 @@ require(['config'],function(){
                     </li>`
                 });
                 // console.log(res)
-                ul.html(res);
-                $('.goods_right').append(ul);
-            }
+                $('.show').html(res);
+                // $('.goods_right').append(ul);
+
+            };
+
+            $('.show').click(function(e){
+                if(e.target.tagName.toLowerCase() === 'img'){
+                    var li = e.target.parentNode.parentNode.parentNode;
+                    var id = $(li).attr('data-id');
+                    var a = $('a');
+                    a.attr('href','goodsdetail.html?id=' + id);
+                }else if(e.target.className==='pic' || e.target.className==='describe'){
+                    var li = e.target.parentNode.parentNode;
+                    var id = $(li).attr('data-id');
+                    var a = $('a');
+                    a.attr('href','goodsdetail.html?id=' + id);
+                }
+            });
 
         });
+
+
     })
 })
