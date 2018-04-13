@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shoppingCar.css" />
+    <script type="text/javascript" src="../js/require.js" data-main="../js/shoppingCar.js"></script>
+</head>
+<body>
+    <div id="moxi_header"></div>
+
+    <div id="main">
+        <div class="container">
+            <div class="buycar_content">
+                <div class="buycar_loading" style="display:none;">购物车中没有商品</div>
+                <div class="carList">
+                    <div class="buycar_box">
+                        <div class="boxHead">
+                            <div class="goods column">商品</div>
+                            <div class="price column">价格</div>
+                            <div class="qty column">数量</div>
+                            <div class="sum column">小计(元)</div>
+                            <div class="action column">操作</div>
+                        </div>
+                        <div class="itemList">
+                            <!-- <div class="itemForm">
+                                <div class="f_goods">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="../images/1.jpg" height="158" width="158" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="msg">
+                                        <a href="#">dfdsafsf</a>
+                                    </div>
+                                </div>
+                                <div class="f_price">
+                                    <em class='pm'>30.30</em>
+                                </div>
+                                <div class="f_qty">
+                                    <div class="wrap_input">
+                                        <span class='btnReduce'>-</span>
+                                        <input type="text" value="1"/>
+                                        <span class='btnAdd'>+</span>
+                                    </div>
+                                </div>
+                                <div class="f_sum">
+                                    <em>300</em>元
+                                </div>
+                                <div class="f_action">
+                                    <a href="#">移入收藏夹</a>
+                                    <a href="#">删除</a>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="box_total">
+                            <div class="count">
+                                <a href="#" class='submit_btn'>全部结算</a>
+                                <div class='sumPrice'>
+                                    总价(不含运费)
+                                    <em>123</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carList"></div>
+                <div class="car_tab">
+                    <ul class="car_tab_til">                       
+                        <li class='tab_item'>最新推荐</li>                        
+                    </ul>
+                    <div class="car_tab_end">
+                        <ul>
+                            <li>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-175px 0;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-360px 0;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-542px 0;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position: 0 -170px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-210px -170px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                            </li>
+                            <li style='display:none;'>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-405px -170px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-565px -170px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:0 -345px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-145px -345px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-314px -345px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                                <div class="tab_info">
+                                    <div class="pic">
+                                        <a href="#" style="background-position:-458px -345px;">
+                                        </a>
+                                    </div>
+                                    <p><a href="#">日本正品商品日本正品商品日本正品商品日本正品商品日本正品商品</a></p>
+                                    <span>
+                                        1062日元(约62.59人名币)
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="btnLeft btn"></span>
+                        <span class="btnRight btn"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="moxi_footer"></div>
+</body>
+</html>

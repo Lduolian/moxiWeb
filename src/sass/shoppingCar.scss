@@ -1,0 +1,272 @@
+#main{
+    margin:30px 0;
+    .container{
+        overflow:hidden;
+        clear:both;
+        .buycar_content{
+            padding-top: 35px;
+            .buycar_loading{
+                height: 55px;
+                line-height: 55px;
+                font-size:12px;
+                text-align:center;
+            }
+
+            .buycar_box{
+                margin:5px auto auto auto;
+                .boxHead{
+                    padding:10px 0;
+                    background:#f3f3f3;
+                    border-bottom:1px solid #ccc;
+                    height: 20px;
+                    .column{
+                        float:left;
+                        font-size:12px;
+                        color:#333;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                    .goods{
+                        width: 575px;
+                        text-indent:160px;
+                    }
+                    .price{
+                        width: 150px;
+                        text-align:center;
+                    }
+                    .qty{
+                        width: 152px;
+                        text-align:center;
+                    }
+                    .sum{
+                        width: 118px;
+                        text-align:center;
+                    }
+                    .action{
+                        width: 123px;
+                        text-align:center;
+                    }
+                }
+                .itemList{
+                    border:1px solid #ccc;
+                    border-top:0 none;
+                    padding-bottom: 30px;
+                    .itemForm{
+                        padding: 13px 0;
+                        overflow:hidden;
+                        border-bottom:1px solid #ccc;
+                        .f_goods{
+                            width: 585px;
+                            float:left;
+                            margin-left: 20px;
+                            .pic{
+                                width: 80px;
+                                height: 80px;
+                                border:1px solid #ccc;
+                                text-align:center;
+                                float:left;
+                                img{
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                            }
+                            .msg{
+                                padding-left: 102px;
+                                font-size:14px;
+                                width: 60%;
+                                a{
+                                    color:#333;
+                                }
+                            }
+                        }
+                        .f_price{
+                            width: 150px;
+                            float:left;
+                            color:#333;
+                            font-size:14px;
+                            .pm{
+                                display:block;
+                                text-align:center;
+                            }
+                        }
+                        .f_qty{
+                            width: 152px;
+                            float:left;
+                            .wrap_input{
+                                width: 108px;
+                                float:left;
+                                height: 35px;
+                                margin-left: 20px;
+                                span{
+                                    display:block;
+                                    width: 33px;
+                                    height: 33px;
+                                    border-top:1px solid #c8c8c8;
+                                    border-bottom:1px solid #c8c8c8;
+                                    text-align:center;
+                                    line-height: 33px;
+                                    background:#eff3f6;
+                                    color:#666;
+                                    font-size:20px;
+                                    float:left;
+                                }
+                                span.btnReduce{
+                                    border-left:1px solid #c8c8c8;
+                                    cursor:pointer;
+                                }
+                                span.btnAdd{
+                                    border-right:1px solid #c8c8c8;
+                                    cursor:pointer;
+                                }
+                                input{
+                                    display:block;
+                                    width: 36px;
+                                    height: 33px;
+                                    border-top:1px solid #c8c8c8;
+                                    border-bottom:1px solid #c8c8c8;
+                                    float:left;
+                                    text-align:center;
+                                    line-height: 33px;
+                                }
+                            }
+                        }
+                        .f_sum{
+                            width: 118px;
+                            float:left;
+                            text-align:center;
+                            color:#333;
+                            font-size:14px;
+                        }
+                        .f_action{
+                            width: 123px;
+                            float:left;
+                            span{
+                                color:#333;
+                                display:inline-block;
+                                text-indent:35px;
+                                font-size:12px;
+                                cursor:pointer;
+                            }
+                        }
+                    }
+                }
+                .box_total{
+                    padding:10px 0;
+                    background:#f3f3f3;
+                    height: 40px;
+                    .count{
+                        float:left;
+                        position:relative;
+                        width: 100%;
+                        height: 40px;
+                        .submit_btn{
+                            width: 123px;
+                            height: 42px;
+                            background:#f26e78;
+                            color:#fff;
+                            font-weight:bold;
+                            position:absolute;
+                            right: 0;
+                            top: -10px;
+                            text-align:center;
+                            line-height: 42px;
+                        }
+                        .sumPrice{
+                            padding-left: 800px;
+                            font-size:14px;
+                            color:#5c5c5c;
+                            font-weight:bold;
+                            em{
+                                font-size:24px;
+                                font-weight:bold;
+                                color:#f86f76;
+                            }
+                        }
+                    }
+                }
+            }
+            .car_tab{
+                margin:38px auto auto auto;
+                li{
+                    display:inline;
+                    padding:6px 28px;
+                    font-size:14px;
+                    float:left;
+                }
+                .car_tab_til{
+                    height: 33px;
+                    background:url(../css/images/line.jpg) repeat-x bottom left;
+                    .tab_item{
+                        color:#f86f76;
+                        border:1px solid #d3d3d3;
+                        border-bottom:0 none;
+                    }
+                }
+                .car_tab_end{
+                    padding:34px 0;
+                    border:1px solid #d3d3d3;
+                    border-top:0 none;
+                    overflow:hidden;
+                    height: 260px;
+                    position:relative;
+                    li{
+                        position:absolute;
+                        top: 0;
+                    }
+                    ul{
+                        height: 210px;
+                        position:relative;
+                        .tab_info{
+                            width: 190px;
+                            float:left;
+                            a{
+                                    color:#66666a;
+                                }
+                            .pic{
+                                width: 135px;
+                                height: 135px;
+                                margin:0 auto;
+                                a{
+                                    display:block;
+                                    width: 135px;
+                                    height: 135px;
+                                    background:url(../css/images/sprict2.png) 0 0 no-repeat;
+                                }
+                            }
+                            p{
+                                width: 135px;
+                                padding:5px 0;
+                                margin:auto;
+                            }
+                            span{
+                                display:block;
+                                margin:auto;
+                                width: 135px;
+                                text-align:center;
+                                color:#e43b36;
+                                font-weight:bold;
+                                font-size:14px;
+                            }
+                        }
+                    }
+                    .btn{
+                        display:block;
+                        width: 53px;
+                        height: 329px;
+                        top: 24px;
+                        position:absolute;
+                        cursor:pointer;
+                    }
+                    .btnLeft{
+                        left: 0;
+                        background: url(../css/images/tabs-left-btn.png) #fff   no-repeat center center;
+                    }
+                    .btnRight{
+                        right: 0;
+                        background:#fff url(../css/images/tabs-right-btn.png) center center  no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
