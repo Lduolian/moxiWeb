@@ -175,7 +175,7 @@
   float: left;
 }
 
-#main .container .buycar_content .buycar_box .itemList .itemForm .f_action span {
+#main .container .buycar_content .buycar_box .itemList .itemForm .f_action span, #main .container .buycar_content .buycar_box .itemList .itemForm .f_action a {
   color: #333;
   display: inline-block;
   text-indent: 35px;

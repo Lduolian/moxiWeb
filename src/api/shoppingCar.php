@@ -15,6 +15,11 @@
         $res = $conn->query($sql);
     }
 
+    if($type==='delete'){
+        $sql = "delete from car where id='$id'";
+        $res = $conn->query($sql);
+    }
+
     $sql = "select * from car";
 
     $result = $conn->query($sql);

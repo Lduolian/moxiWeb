@@ -247,3 +247,181 @@
         }
     }
 }
+
+#bandrSale{
+    background:#F5F5F5;
+    padding: 24px 0;
+    .container{
+        height: 284px;
+        
+        .inBandSale{
+            height: 238px;
+            h2{
+                a{
+                    width: 300px;
+                    height: 44px;
+                    line-height: 44px;
+                    color:#000;
+                    font-size:18px;
+                    font-weight:bold;
+                }
+            }
+            .inBandSaleMain{
+                width: 1200px;
+                height: 238px;
+                float:left;
+                position:relative;
+                .inBandSaleMainL{
+                    float:left;
+                    width: 190px;
+                    height: 238px;
+                    position:absolute;
+                    left: 0;
+                    top: 0;
+                }
+                .inBandSaleMainC{
+                    float:left;
+                    .band{
+                        overflow:hidden;
+                        border-top:1px solid #efefef;
+                        border-left:1px solid #efefef;
+                        position:absolute;
+                        left:190px;
+                        top:0;
+                        background:#fff;
+                        li{
+                            float:left;
+                            width: 204px;
+                            height: 78px;
+                            overflow:hidden;
+                            border-bottom:1px solid #efefef;
+                            border-right:1px solid #efefef;
+                            img:hover{
+                                transform:translateX(-5px);
+                            }
+                        }
+                    }
+                }
+                .inBandSaleMainR{
+                    float:left;
+                    width: 198px;
+                    height: 238px;
+                    position:absolute;
+                    left:1010px;
+                    top: 0;
+                }
+            }
+        }
+
+    }
+}
+
+#goodActive{
+    background:#F5F5F5;
+    padding: 24px 0;
+    .container{
+        .title{
+            font-size:14px;
+            margin-bottom: 0;
+            height: 38px;
+            .icon{
+                display:inline-block;
+                text-align:center;
+                width: 30px;
+                height: 38px;
+                line-height: 36px;
+            }
+            b{
+                font-size:18px;
+                line-height:38px;
+                display:inline-block;
+                vertical-align:bottom;
+            }
+        }
+        .title_1{
+            color:#ee124b;
+            .icon{
+                background:url(../css/images/icon.png) 0 0 no-repeat;
+            }
+            
+        }
+        .title_2{
+             b{color:#0099CC;}
+            .icon2{
+                background:url(../css/images/icon.png) -50px 0 no-repeat;
+            }
+        }
+        .title_3{
+            b{color:#009900;}
+            .icon3{
+                background:url(../css/images/icon.png) -100px 0 no-repeat;
+            }
+        }
+        .con{
+            width: 100%;
+            overflow:hidden;
+        }
+        .con_1{
+            border-top:2px solid #ee124b;
+            margin-bottom:30px;
+            .con_L{
+            float:left;
+            width: 299px;
+            height: 451px;
+            position:relative;
+            overflow:hidden;
+            img{
+                width: 299px;
+                height: 451px;
+                display:block;
+            }
+            ul{
+                position:absolute;
+                overflow:hidden;
+            }
+
+            }
+            .con_R{
+                float:left;
+                width: 901px;
+                ul{
+                    height: 451px;
+                    li{
+                        float:left;
+                        a{
+                            display:block;
+                        }
+                    }
+                    li.big{
+                        img{
+                            width: 451px;
+                            height: 225px;
+                        }
+                        
+                    }
+                    li.small{
+                        img{
+                            width: 224px;
+                            height: 225px;
+                        }
+                        
+                    }
+
+                }
+                .dot{
+                    width: 100%;
+                    position:absolute;
+                    left: 0;
+                    bottom:15px;
+                    text-align:center;
+                    .dotlist{
+                        display:inline-block;
+                        font-size:0;
+                        width: 6px;
+                    }
+                }
+            }
+        }
+
+    }
+}

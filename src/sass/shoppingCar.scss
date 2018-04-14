@@ -140,13 +140,14 @@
                         .f_action{
                             width: 123px;
                             float:left;
-                            span{
+                            span,a{
                                 color:#333;
                                 display:inline-block;
                                 text-indent:35px;
                                 font-size:12px;
                                 cursor:pointer;
                             }
+
                         }
                     }
                 }

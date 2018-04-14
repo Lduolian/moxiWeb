@@ -1,10 +1,11 @@
 require(['config'],function(){
-    require(['jquery'],function(){
+    require(['jquery','xZoom'],function(){
         jQuery(function($){
             $('#moxi_header').load('../html/header.html');
             $('#moxi_footer').load('../html/footer.html');
         });
         jQuery(function($){
+            
             var url = decodeURI(location.search.slice(1));
             var str = url.split('=');
             var id = str[1];
@@ -14,11 +15,16 @@ require(['config'],function(){
                 success:function(data){
                     data = JSON.parse(data);
                     fun(data);
+                    $('.left_pic').xZoom({
+                        height:400,
+                        width:400
+                    })
                 }
             });
 
             var fun = function(data){
                 $('.left_pic img').attr('src',data.img);
+                $('.fangdajing img').attr('src',data.img);
                 $('.left_list img').attr('src',data.img);
                 $('.good_center h1').html(data.describe);
                 $('.good_center .money').html(data.price);
@@ -29,24 +35,17 @@ require(['config'],function(){
 
             $('.btnRight').click(function(){
                 $('.left_list img').animate({
-                    right:0
-                },1000,function(){
-                    if($('.left_list img').css('left')){
-                    $('.left_list img').css('left','');
-                }
-                });
-                
+                    left:240
+                },1000);
+
             });
 
             $('.btnLeft').click(function(){
+                
                 $('.left_list img').animate({
                     left:0
-                },1000,function(){
-                    if($('.left_list img').css('right')){
-                    $('.left_list img').css('right','');
-                }
-                });
-                
+                },1000)
+
             });
 
             $('.btnAdd').click(function(){
@@ -73,7 +72,8 @@ require(['config'],function(){
                 $.ajax({
                     url:'../api/goodsdetail.php',
                     data:{gId:id},
-                    success:function(data){
+                    
+                    success:function(data){alert("加入购物车成功");
                         data = JSON.parse(data);
                         var goods = data;
                         $.ajax({

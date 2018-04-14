@@ -21,7 +21,7 @@ require(['config'],function(){
                         var btnAdd = $('.btnAdd');
                         var btnReduce = $('.btnReduce');
                         var f_action = $('.f_action');
-                        test(f_action);
+                        del(f_action);
                         add(btnAdd);
                         reduce(btnReduce);
                     }
@@ -88,16 +88,33 @@ require(['config'],function(){
             }
 
 
-            var test = function(data){
+            var del = function(data){
+                
                 data.on('click','span',function(e){
-                    if($(e.target).attr('id')!='undefined'){
-                        console.log($(e.target).attr('id'));
-                    }
+                    var dataId = $(e.target).attr('id');
+                    var sum = $(e.target).parent().prev().find('em').html()*1;
+                    var zongji = $('.sumPrice em').html()*1 - sum
+                    $('.sumPrice em').html(zongji);
+                    $.ajax({
+                        url:'../api/shoppingCar.php',
+                        data:{id:dataId,type:'delete'},
+                        success:function(data){
+                            data = JSON.parse(data);
+                            if(data.length==0){
+                                $('.buycar_loading').css('display','block');
+                                $('.buycar_box').html('');
+                            }else{console.log(777)
+                                $('.buycar_loading').css('display','none');
+                                $(e.target).parent().parent().remove();
+                            }
+                        }
+                    })
                     
                 })
             }
 
-            var fun = function(data){
+
+            var fun = function(data){console.log("fun");
                 var arr = [];
                 var html = $.map(data,function(item){
                     var sum = item.qty * item.price;
@@ -128,7 +145,7 @@ require(['config'],function(){
                                     <em>${sum}</em>元
                                 </div>
                                 <div class="f_action">
-                                    <span>移入收藏夹</span>
+                                    <a>移入收藏夹</a>
                                     <span id="${item.id}">删除</span>
                                 </div>
                             </div>`

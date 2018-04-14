@@ -71,6 +71,7 @@ require(['config'],function(){
                 timer = setInterval(autoPlay,3000);
             });
         }); 
+
   });
 
 });
