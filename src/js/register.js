@@ -4,7 +4,7 @@ require(['config'],function(){
         jQuery(function($){
             $('#moxi_header').load('../html/header.html');
             $('#moxi_footer').load('../html/footer.html');
-        })
+        });
         jQuery(function($){
             $('.sub').click(function(){
                 let _username = $('#zhanghao').val();
@@ -32,10 +32,66 @@ require(['config'],function(){
                     })
                 }
             });
-        })
+        });
 
         jQuery(function($){
            
+
+            $('#username').focusout(function(){
+                var username = $('#username').val();
+                username = $.trim(username);
+                if(username.length===0 || !(/^[\w\-]{3,10}$/i.test(username))){
+                    $('.nicheng').addClass('error').html('昵称格式不正确');
+                    return false;
+                }else{
+                    $('.nicheng').removeClass('error').html('');
+                }
+            });
+
+            $('#password').focusout(function(){
+                var pwd = $('#password').val();
+                pwd = $.trim(pwd);
+                if(pwd.length === 0 || !(/^[\w\-]{6,16}$/i.test(pwd))){
+                    $('.firstPass').addClass('error').html('密码格式不正确');
+                    return false;
+                }else{
+                    $('.firstPass').removeClass('error').html('');
+                }
+            });
+
+            $('#passwordAgain').focusout(function(){
+                var pwd = $('#password').val();
+                pwd = $.trim(pwd);
+                var pwdAgain = $('#passwordAgain').val();
+                pwdAgain = $.trim(pwdAgain);
+                if(pwdAgain.length ===0 || pwd.length ===0 || pwd!=pwdAgain){
+                    $('.secondPass').addClass('error').html('两次密码输入不一致');
+                    return false;
+                }else{
+                    $('.secondPass').removeClass('error').html('');
+                }
+            });
+
+            var code = randomLetterNum();
+            $('.randomCode').html(code);
+            $('.nextCode').click(function(){
+                var code = randomLetterNum();
+                $('.randomCode').html(code);
+            })
+            $('#code').focusout(function(){
+                var randomCode = $('.randomCode').html();
+                randomCode = $.trim(randomCode);
+                var code = $('#code').val();
+                code = $.trim(code);
+                if(code.length===0 || randomCode != code){
+                    $('.vcode').addClass('error').html('请输入正确的验证码');
+                    return false;
+                }else{
+                    $('.vcode').removeClass('error').html('');
+                }
+
+            });
+            // }
             $('#zhuceNum').focusout(function(){
                 var _zhuceNum = $('#zhuceNum').val();
                 _zhuceNum = $.trim(_zhuceNum);
@@ -116,22 +172,35 @@ require(['config'],function(){
                 _zhuceNum = $.trim(_zhuceNum);
                 var _pass = $('#password').val();
                 _pass = $.trim(_pass);
-                $.ajax({
-                    url:'../api/register.php',
-                    data:{
-                        username:_zhuceNum,
-                        userpass:_pass,
-                        type:'reg'
-                    },
-                    success:function(data){
-                        console.log(data);
-                    }
-                })
+                var pwdAgain = $('#passwordAgain').val();
+                pwdAgain = $.trim(pwdAgain);
+                var randomCode = $('.randomCode').html();
+                randomCode = $.trim(randomCode);
+                var code = $('#code').val();
+                code = $.trim(code);
+
+                if(_zhuceNum.length === 0 || _pass.length === 0 || pwdAgain.length===0 || _pass!=pwdAgain || randomCode!=code){
+                    alert("注册信息填写有误，请重新填写");
+                }else{
+                    $.ajax({
+                        url:'../api/register.php',
+                        data:{
+                            username:_zhuceNum,
+                            userpass:_pass,
+                            type:'reg'
+                        },
+                        success:function(data){
+                            console.log(data);
+                            location.href='../index.html';
+                        }
+                    })
+                }
+                
             });
 
 
 
-        })
+        });
         
     })
 })
